@@ -1,0 +1,20 @@
+# This is an internal file that is required by the platform. Do not delete this file.
+# Edit this file if you need to update project configuration.
+
+version: 2.0
+configuration:
+  default_open_paths:
+    - notebook_sample.ipynb
+
+  # To enable scoring, add the scoring command below. You can upload files required
+  # for scoring under the "Evaluation files" section below. These files will not be
+  # available to the candidates. At the time of evaluation, we will download these
+  # files under the "evaluation_files" folder. Assuming you uploaded "score.py" and
+  # "expected_output.csv", the sample scoring command configuration is given below:
+
+  scoring:
+    command: python evaluation_files/score.py evaluation_files/expected_output.csv submission.csv
+
+  # Ensure that the evaluation script can handle edge cases and return a score in
+  # all possible scenarios. An erroneous response will result in a no score, and
+  # you will be required to review the submission manually.
