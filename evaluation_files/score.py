@@ -48,17 +48,3 @@ def evaluate_score(expected_csv, submission_csv):
         base_score -= penalty
 
     return max(base_score, 0)
-
-
-if __name__ == '__main__':
-    import sys
-
-    if len(sys.argv) != 3:
-        print('Usage: python score.py [expected_file] [submitted_file]')
-        sys.exit(1)
-
-    expected_file = sys.argv[1]
-    submitted_file = sys.argv[2]
-
-    score = evaluate_score(expected_file, submitted_file)
-    print(score) 

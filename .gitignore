@@ -6,7 +6,6 @@
 
 .ipynb_checkpoints
 */.ipynb_checkpoints/*
-submission.csv
 *.jpg
 *.jpeg
 *.png
